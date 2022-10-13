@@ -53,8 +53,15 @@
     background-position: top 25% right 0;
  }
 
-/* Acerca de  */
-#fotoPerfil{
+#fotoPerfil {
     height: 30vh;
     border-radius: 50%;
+    margin-top: 15%;
+    margin-left: 5%;
 }
+
+#banner h1{
+    margin-left: 5%;
+    margin-top: 20px;
+}
+/* Acerca de  */
