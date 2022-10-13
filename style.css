@@ -46,22 +46,57 @@
     padding: 10px 15px;
 }
 
-/* Banner */
-#banner{
+/* Banner y Perfil */
+#banner-perfil{
     background-image: url("img/banner.jpg");
     height: 50vh;
     background-position: top 25% right 0;
+    display: flex;
  }
 
-#fotoPerfil {
+#perfil{
+    width: 25%;
+    margin: 13% 0 0 5%;
+    height: 100%;
+} 
+
+#perfil img {
     height: 30vh;
     border-radius: 50%;
-    margin-top: 15%;
-    margin-left: 5%;
+    text-align: center;
 }
 
-#banner h1{
-    margin-left: 5%;
+#perfil h1{
+    text-align: center;
     margin-top: 20px;
+    font-size: 20pt; 
 }
-/* Acerca de  */
+
+#perfil h6{
+    font-style: italic;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 12pt;
+    color: red;
+}
+
+#acerca-de{
+    height: 27vh;
+    margin: 26% 5% 0 5%;
+}
+
+#acerca-de h5{
+    color: rgb(63, 63, 63);
+    font-size: 12pt;
+    text-align: justify;
+}
+
+#datos{
+    height: 27vh;
+    margin: 27% 5% 0 0;
+}
+
+#datos p{
+    margin: 0;
+    font-size: 10pt;
+}
