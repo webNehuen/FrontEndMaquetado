@@ -52,3 +52,9 @@
     height: 50vh;
     background-position: top 25% right 0;
  }
+
+/* Acerca de  */
+#fotoPerfil{
+    height: 30vh;
+    border-radius: 50%;
+}
