@@ -46,43 +46,113 @@
     
     <hr style="margin-bottom: 0;">
 
-    <section>
-        <div id="exp-container">
-            <h1>Experiencia</h1>
-            <div id="experiencia">
-                <div id="logo">
-                    <img src="./img/witbor.jpeg" alt="witbor">
-                </div>
-                <div id="titulo">
-                    <h4>Witbor - <span style="color: rgb(9, 45, 122);">Consultora y desarrolladora de software</span></h4>
-                    <hr style="margin: 0;">
-                    <p><b>BI Publisher Developer</b></p>
-                    <p style="color: grey;">2021 - 2022</p>
-                </div>
+    <section class="exp-container">
+        <h1>Experiencia</h1>
+        <div class="experiencia">
+            <div class="exp-logo">
+                <img src="./img/witbor.jpeg" alt="witbor">
             </div>
-            <div id="experiencia">
-                <div id="logo">
-                    <img src="./img/witbor.jpeg" alt="witbor">
-                </div>
-                <div id="titulo">
-                    <h4>Witbor - <span style="color: rgb(9, 45, 122);">Consultora y desarrolladora de software</span></h4>
-                    <hr style="margin: 0;">
-                    <p><b>BI Publisher Developer</b></p>
-                    <p style="color: grey;">2021 - 2022</p>
-                </div>
+            <div class="titulo">
+                <h4>Witbor - <span style="color: rgb(9, 45, 122);">Consultora y desarrolladora de software</span></h4>
+                <hr style="margin: 0;">
+                <p><b>BI Publisher Developer</b></p>
+                <p style="color: grey;">2021 - 2022</p>
             </div>
-            <div id="experiencia">
-                <div id="logo">
-                    <img src="./img/witbor.jpeg" alt="witbor">
-                </div>
-                <div id="titulo">
-                    <h4>Witbor - <span style="color: rgb(9, 45, 122);">Consultora y desarrolladora de software</span></h4>
-                    <hr style="margin: 0;">
-                    <p><b>BI Publisher Developer</b></p>
-                    <p style="color: grey;">2021 - 2022</p>
-                </div>
+        </div>
+        <div class="experiencia">
+            <div class="exp-logo">
+                <img src="./img/witbor.jpeg" alt="witbor">
             </div>
-        </div>    
+            <div class="titulo">
+                <h4>Witbor - <span style="color: rgb(9, 45, 122);">Consultora y desarrolladora de software</span></h4>
+                <hr style="margin: 0;">
+                <p><b>BI Publisher Developer</b></p>
+                <p style="color: grey;">2021 - 2022</p>
+            </div>
+        </div>
+        <div class="experiencia">
+            <div class="exp-logo">
+                <img src="./img/witbor.jpeg" alt="witbor">
+            </div>
+            <div class="titulo">
+                <h4>Witbor - <span style="color: rgb(9, 45, 122);">Consultora y desarrolladora de software</span></h4>
+                <hr style="margin: 0;">
+                <p><b>BI Publisher Developer</b></p>
+                <p style="color: grey;">2021 - 2022</p>
+            </div>
+        </div>  
     </section>
+
+    <section id="edu-container" class="exp-container">
+        <h1>Educación</h1>
+        <div class="experiencia">
+            <div class="edu-logo">
+                <img src="./img/itlf.png" alt="witbor">
+            </div>
+            <div class="titulo">
+                <h4>ITLF - <span style="color: rgb(9, 45, 122);">Instituto Técnico La Falda</span></h4>
+                <hr style="margin: 0;">
+                <p><b>Secundario - Técnico en Programación</b></p>
+                <p style="color: grey;">2016 - 2022</p>
+            </div>
+        </div>
+        <div class="experiencia">
+            <div class="edu-logo">
+                <img src="./img/utn.png" alt="witbor">
+            </div>
+            <div class="titulo">
+                <h4>UTN - <span style="color: rgb(9, 45, 122);">Ingeniería en Sistemas</span></h4>
+                <hr style="margin: 0;">
+                <p><b>Facultad Regional de Córdoba</b></p>
+                <p style="color: grey;">2023 - ...</p>
+            </div>
+        </div>
+        <div class="experiencia">
+            <div class="exp-logo">
+                <img src="./img/witbor.jpeg" alt="witbor">
+            </div>
+            <div class="titulo">
+                <h4>Witbor - <span style="color: rgb(9, 45, 122);">Consultora y desarrolladora de software</span></h4>
+                <hr style="margin: 0;">
+                <p><b>BI Publisher Developer</b></p>
+                <p style="color: grey;">2021 - 2022</p>
+            </div>
+        </div>  
+    </section>
+
+    <section id="habilidades" class="exp-container">
+        <h1>Hard & Soft Skills</h1>
+        <div class="skill">
+            <div class="outer">
+                <div class="inner">
+                    <div id="number">
+                        
+                    </div>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                <defs>
+                   <linearGradient id="GradientColor">
+                      <stop offset="0%" stop-color="#e91e63" />
+                      <stop offset="100%" stop-color="#673ab7" />
+                   </linearGradient>
+                </defs>
+                <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+            </svg>
+        </div>
+    </section>
+
+    <script>
+        let number = document.getElementById("number");
+        let counter = 0;
+        setInterval(() =>{
+            if(counter == 65){
+                clearInterval();
+            }else{
+                counter += 1;
+                number.innerHTML = counter + "%";
+            }
+        }, 30)
+    </script>
 </body>
 </html>
