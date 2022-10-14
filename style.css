@@ -1,11 +1,19 @@
-/* Header Start */
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+*{
+    font-family: 'Spartan', sans-serif;
+}
+
+/* Header Start */
 #header{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0px 80px;
     background: #222329;
+    position: sticky;
+    top: 0;
+    left: 0;
 } 
 
 .logo{
@@ -46,24 +54,25 @@
     padding: 10px 15px;
 }
 
-/* Banner y Perfil */
-#banner-perfil{
+
+/* Banner*/
+#banner{
     background-image: url("img/banner.jpg");
     height: 50vh;
-    background-position: top 25% right 0;
-    display: flex;
+    background-position: top 100% right 0;
  }
 
-#perfil{
-    width: 25%;
-    margin: 13% 0 0 5%;
-    height: 100%;
+
+/* Acerca de*/
+#acerca-de{
+    display: flex;
+    justify-content: space-between;
+    margin: -8% 5% 0 5%;
 } 
 
 #perfil img {
     height: 30vh;
     border-radius: 50%;
-    text-align: center;
 }
 
 #perfil h1{
@@ -80,23 +89,55 @@
     color: red;
 }
 
-#acerca-de{
-    height: 27vh;
-    margin: 26% 5% 0 5%;
+#present{
+    margin-top: 12%;
+    width: 60%;
 }
 
-#acerca-de h5{
-    color: rgb(63, 63, 63);
+#present h5{
+    color: grey;
     font-size: 12pt;
     text-align: justify;
+    margin: 0;
 }
 
 #datos{
-    height: 27vh;
-    margin: 27% 5% 0 0;
+    margin-top: 12%;
 }
 
 #datos p{
     margin: 0;
     font-size: 10pt;
+}
+
+#datos .titulo{
+    margin-bottom: 10px;
+}
+
+/* Experiencia */
+#exp-container{
+    background-color: beige;
+}
+
+#exp-container h1{
+    padding: 3% 0 0 5%;
+    font-size: 20pt;
+}
+
+#experiencia{
+    display: flex;
+    margin: 5% 0 0 5%;
+}
+
+#titulo{
+    margin-left: 20px;
+}
+
+#titulo p{
+    margin: 8px 0 0 0;
+    font-size: 10pt;
+}
+
+#logo img{
+    height: 5vh;
 }
