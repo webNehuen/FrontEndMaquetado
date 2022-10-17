@@ -122,35 +122,179 @@
 
     <section id="habilidades" class="exp-container">
         <h1>Hard & Soft Skills</h1>
-        <div class="skill">
-            <div class="outer">
-                <div class="inner">
-                    <div id="number">
-                        
+        <div class="skills" id="skills1">
+            <div class="skill">
+                <div class="outer">
+                    <div class="inner">
+                        <p>SQL<p>
+                        <div id="numberSQL"></div>
                     </div>
                 </div>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                    <defs>
+                    <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#e91e63" />
+                        <stop offset="100%" stop-color="#673ab7" />
+                    </linearGradient>
+                    </defs>
+                    <circle id="sql" cx="80" cy="80" r="70" stroke-linecap="round" />
+                </svg>
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
-                <defs>
-                   <linearGradient id="GradientColor">
-                      <stop offset="0%" stop-color="#e91e63" />
-                      <stop offset="100%" stop-color="#673ab7" />
-                   </linearGradient>
-                </defs>
-                <circle cx="80" cy="80" r="70" stroke-linecap="round" />
-            </svg>
+            <div class="skill">
+                <div class="outer">
+                    <div class="inner">
+                        <p>Java<p>
+                        <div id="numberJava"></div>
+                    </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                    <defs>
+                    <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#e91e63" />
+                        <stop offset="100%" stop-color="#673ab7" />
+                    </linearGradient>
+                    </defs>
+                    <circle id="java" cx="80" cy="80" r="70" stroke-linecap="round" />
+                </svg>
+            </div>
+            <div class="skill">
+                <div class="outer">
+                    <div class="inner">
+                        <p>PHP<p>
+                        <div id="numberPHP"></div>
+                    </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                    <defs>
+                    <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#e91e63" />
+                        <stop offset="100%" stop-color="#673ab7" />
+                    </linearGradient>
+                    </defs>
+                    <circle id="php" cx="80" cy="80" r="70" stroke-linecap="round" />
+                </svg>
+            </div>
+        </div>
+        <div class="skills" id="skills2">
+            <div class="skill">
+                <div class="outer">
+                    <div class="inner">
+                        <p>JavaScript<p>
+                        <div id="numberJavaScript"></div>
+                    </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                    <defs>
+                    <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#e91e63" />
+                        <stop offset="100%" stop-color="#673ab7" />
+                    </linearGradient>
+                    </defs>
+                    <circle id="javaScript" cx="80" cy="80" r="70" stroke-linecap="round" />
+                </svg>
+            </div>
+            <div class="skill">
+                <div class="outer">
+                    <div class="inner">
+                        <p>HTML<p>
+                        <div id="numberHTML"></div>
+                    </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                    <defs>
+                    <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#e91e63" />
+                        <stop offset="100%" stop-color="#673ab7" />
+                    </linearGradient>
+                    </defs>
+                    <circle id="html" cx="80" cy="80" r="70" stroke-linecap="round" />
+                </svg>
+            </div>
+            <div class="skill">
+                <div class="outer">
+                    <div class="inner">
+                        <p>CSS<p>
+                        <div id="numberCSS"></div>
+                    </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                    <defs>
+                    <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#e91e63" />
+                        <stop offset="100%" stop-color="#673ab7" />
+                    </linearGradient>
+                    </defs>
+                    <circle id="css" cx="80" cy="80" r="70" stroke-linecap="round" />
+                </svg>
+            </div>
         </div>
     </section>
 
     <script>
-        let number = document.getElementById("number");
-        let counter = 0;
+        let numberSQL = document.getElementById("numberSQL");
+        let counterSQL = 0;
         setInterval(() =>{
-            if(counter == 65){
+            if(counterSQL == 85){
                 clearInterval();
             }else{
-                counter += 1;
-                number.innerHTML = counter + "%";
+                counterSQL += 1;
+                numberSQL.innerHTML = counterSQL + "%";
+            }
+        }, 30)
+
+        let numberJava = document.getElementById("numberJava");
+        let counterJava = 0;
+        setInterval(() =>{
+            if(counterJava == 75){
+                clearInterval();
+            }else{
+                counterJava += 1;
+                numberJava.innerHTML = counterJava + "%";
+            }
+        }, 30)
+
+        
+        let numberPHP = document.getElementById("numberPHP");
+        let counterPHP = 0;
+        setInterval(() =>{
+            if(counterPHP == 50){
+                clearInterval();
+            }else{
+                counterPHP += 1;
+                numberPHP.innerHTML = counterPHP + "%";
+            }
+        }, 30)
+        
+        let numberJavaScript = document.getElementById("numberJavaScript");
+        let counterJavaScript = 0;
+        setInterval(() =>{
+            if(counterJavaScript == 70){
+                clearInterval();
+            }else{
+                counterJavaScript += 1;
+                numberJavaScript.innerHTML = counterJavaScript + "%";
+            }
+        }, 30)
+
+        let numberCSS = document.getElementById("numberCSS");
+        let counterCSS = 0;
+        setInterval(() =>{
+            if(counterCSS == 90){
+                clearInterval();
+            }else{
+                counterCSS += 1;
+                numberCSS.innerHTML = counterCSS + "%";
+            }
+        }, 30)
+
+        let numberHTML = document.getElementById("numberHTML");
+        let counterHTML = 0;
+        setInterval(() =>{
+            if(counterHTML == 100){
+                clearInterval();
+            }else{
+                counterHTML += 1;
+                numberHTML.innerHTML = counterHTML + "%";
             }
         }, 30)
     </script>

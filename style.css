@@ -54,7 +54,6 @@
     padding: 10px 15px;
 }
 
-
 /* Banner*/
 #banner{
     background-image: url("img/banner.jpg");
@@ -150,10 +149,24 @@
 }
 
 /* Skills */
+#habilidades h1{
+    margin-bottom: 5%;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 0 10%;
+    width: 60vw;
+}
+
+#skills1{
+    margin-bottom: 5%;
+}
+
 .skill{
     width: 160px;
     height: 160px;
-    /* background-color: red; */
     position: relative;
 }
 
@@ -170,9 +183,8 @@
     height: 120px;
     width: 120px;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    padding: 30px 0;
     box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
                 inset -4px -4px 6px -1px rgba(255,255,255,0.7),
                         -0.5px -0.5px 0px rgba(255,255,255,1),
@@ -180,18 +192,14 @@
                         0px 12px 10px -10px rgba(0,0,0,0.05);
 }
 
+.inner p{
+    color: midnightblue;
+    font-weight: 700;
+}
+
 #number{
     font-weight: 600;
     color: #555;
-}
-
-circle{
-    fill: none;
-    stroke: url(#GradientColor);
-    stroke-width: 20px;
-    stroke-dasharray: 472;
-    stroke-dashoffset: 472;
-    animation: anim 2s linear forwards;
 }
 
 svg{
@@ -200,8 +208,94 @@ svg{
     left: 0;
 }
 
+#sql{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    animation: anim 2.6s linear forwards;
+}
+
+#java{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    animation: anim2 2.4s linear forwards;
+}
+
+
+#php{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    animation: anim3 1.5s linear forwards;
+}
+
+#javaScript{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    animation: anim4 2.2s linear forwards;
+}
+
+#html{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    animation: anim5 3.1s linear forwards;
+}
+
+#css{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    animation: anim6 2.8s linear forwards;
+}
+
+
 @keyframes anim{
     100%{
-        stroke-dashoffset: 165;
+        stroke-dashoffset: 66;
+    }
+}
+
+@keyframes anim2{
+    100%{
+        stroke-dashoffset: 110;
+    }
+}
+
+@keyframes anim3{
+    100%{
+        stroke-dashoffset: 220;
+    }
+}
+
+@keyframes anim4{
+    100%{
+        stroke-dashoffset: 132;
+    }
+}
+
+@keyframes anim5{
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes anim6{
+    100%{
+        stroke-dashoffset: 44;
     }
 }
