@@ -149,7 +149,7 @@
 }
 
 /* Skills */
-#habilidades h1{
+#hab-container h1{
     margin-bottom: 5%;
 }
 
@@ -298,4 +298,9 @@ svg{
     100%{
         stroke-dashoffset: 44;
     }
+}
+
+/* Proyectos */
+#proyecto{
+    padding-bottom: 5%;
 }
